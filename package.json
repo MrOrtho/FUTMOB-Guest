@@ -1,0 +1,20 @@
+{
+  "name": "futmob-guest",
+  "version": "1.0.0",
+  "description": "FUTMOB Guest - guest match builder",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.futmob.guest",
+    "productName": "FUTMOB Guest",
+    "files": ["main.js", "preload.js", "icon.png", "src/**/*"],
+    "win": { "target": "nsis" }
+  }
+}
